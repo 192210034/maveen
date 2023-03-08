@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int m, n, i, count = 0;
+
+    printf("Enter two numbers M and N: ");
+    scanf("%d %d", &m, &n);
+
+    printf("The odd numbers between %d and %d are: ", m, n);
+    for(i = m; i <= n; i++) {
+        if(i % 2 != 0) {
+            printf("%d ", i);
+        } else {
+            count++;
+        }
+    }
+
+    printf("\nThe number of even numbers between %d and %d is: %d\n", m, n, count);
+
+    return 0;
+}
