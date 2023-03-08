@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+  {
+  	int a,b,x,n;
+  	printf("choose a number between 1to 5");
+  	scanf("%d",&n);
+  	printf("enter a,b values");
+  	scanf("%d%d",&a,&b);
+  	switch(n)
+  	{
+  		 '1':x=a+b;
+  		     break;
+  		 '2':x=a-b;
+		     break;
+		 '3':x=a*b;
+		     break;
+		'4':x=a/b;
+		     break;
+		'5':x=a%b;
+		     break;
+		default:printf("enter correct choose");
+		    break;	 	 	 	   
+	  }
+	printf("%d",x);
+	return 0;  
+  }
