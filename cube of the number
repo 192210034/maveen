@@ -1,0 +1,12 @@
+/*cube of the numbers*/
+#include<stdio.h>
+int main()
+   {
+   	int i=1,cube;
+   	printf("enter number of terms");
+   	scanf("%d",i);
+   	cube=i*i*i;
+   	scanf("%d=%d*%d*%d",&cube,&i,&i,&i);
+   	for(i=1;i<=5;i++)
+   	printf("cube of the i=%d\n",cube);
+   }
