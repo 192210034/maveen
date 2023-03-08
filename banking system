@@ -1,0 +1,28 @@
+/*Banking system*/
+#include<stdio.h>
+void deposit(int a);
+void withdraw(int b);
+void balencecheck();
+int account_balence=0;
+int main()
+    {
+    	deposit(5000);
+    	deposit(3000);
+    	balencecheck();
+    	withdraw(1000);
+    	balencecheck();
+    	return 0;
+	}
+void deposit(int a)
+ {
+ 	account_balence+=a;
+ 	printf("sucessfully deposited Rs:%d\n",a);
+ }
+void withdraw(int b)
+{
+	account_balence-=b;
+}
+void balencecheck()
+{
+	printf("your account balence is =%d\n",account_balence);
+}
